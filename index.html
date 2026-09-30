@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAE VAT Calculator 2026 | Free Tool for Businesses & Freelancers</title>
+  <meta name="description"
+    content="Free UAE VAT calculator. Add or remove 5% VAT instantly, generate a simple VAT breakdown for invoices and quotes.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="active">VAT Calculator</a>
+    <a href="https://hakimwebsites.github.io/salary-calculator/">Salary Calculator</a>
+    <a href="https://hakimwebsites.github.io/gratuity-calculator/">Gratuity Calculator</a>
+  </nav>
+
+  <header>
+    <h1>UAE VAT Calculator</h1>
+    <p class="subtitle">Add or remove 5% VAT instantly. Built for freelancers, small businesses, and anyone quoting a
+      client.</p>
+  </header>
+
+  <main class="calculator-card">
+    <div class="mode-toggle">
+      <button class="mode-btn active" data-mode="add" id="addModeBtn">Add VAT</button>
+      <button class="mode-btn" data-mode="remove" id="removeModeBtn">Remove VAT</button>
+    </div>
+
+    <div class="input-group">
+      <label for="amount" id="amountLabel">Amount Excluding VAT (AED)</label>
+      <input type="number" id="amount" placeholder="e.g. 1000" min="0">
+    </div>
+
+    <div class="input-group">
+      <label for="vatRate">VAT Rate</label>
+      <select id="vatRate">
+        <option value="5">5% (Standard UAE Rate)</option>
+        <option value="0">0% (Zero-Rated Supply)</option>
+      </select>
+    </div>
+
+    <button id="calculateBtn">Calculate</button>
+
+    <div id="result" class="result-box" style="display:none;">
+      <div class="breakdown-row">
+        <span id="netLabel">Amount Excl. VAT</span>
+        <strong id="netAmount">0 AED</strong>
+      </div>
+      <div class="breakdown-row">
+        <span>VAT (<span id="vatRateDisplay">5</span>%)</span>
+        <strong id="vatAmount">0 AED</strong>
+      </div>
+      <div class="breakdown-row total-row">
+        <span>Total Incl. VAT</span>
+        <strong id="totalAmount">0 AED</strong>
+      </div>
+      <button id="printBtn" class="print-btn">Print / Save as PDF for Invoice</button>
+    </div>
+  </main>
+
+  <div class="ad-slot" id="ad-slot-1"></div>
+
+  <section class="info-section">
+    <h2>UAE VAT Basics for Businesses</h2>
+    <ul>
+      <li>Standard VAT rate in the UAE is <strong>5%</strong>, applied to most goods and services</li>
+      <li>Businesses with taxable supplies over <strong>AED 375,000/year</strong> must register for VAT with the Federal
+        Tax Authority (FTA)</li>
+      <li>Voluntary registration is available from <strong>AED 187,500/year</strong> in taxable supplies</li>
+      <li>VAT returns are typically filed <strong>quarterly</strong>, though some businesses file monthly</li>
+    </ul>
+    <p class="disclaimer">This tool provides estimates for quick reference only and is not tax advice. Always confirm
+      VAT treatment and filing obligations with the FTA or a registered tax agent.</p>
+  </section>
+
+  <div class="ad-slot" id="ad-slot-2"></div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <details class="faq-item">
+      <summary>Do I need to register for VAT?</summary>
+      <p>Registration is mandatory once your taxable supplies exceed AED 375,000 in the past 12 months, or are expected
+        to in the next 30 days. Below that, registration is optional starting from AED 187,500.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What does "zero-rated" mean?</summary>
+      <p>Zero-rated supplies (like certain exports, international transport, and some healthcare/education services) are
+        taxable but charged at 0% VAT, which is different from being fully exempt.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can I use this for official invoices?</summary>
+      <p>This tool helps you calculate the correct VAT breakdown for quotes and internal reference. For fully compliant
+        tax invoices, ensure you include your TRN (Tax Registration Number) and all FTA-required invoice fields.</p>
+    </details>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 UAE VAT Calculator. Built for UAE businesses and freelancers.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
